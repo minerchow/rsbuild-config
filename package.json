@@ -1,0 +1,29 @@
+{
+  "name": "rsbuild-react",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "cross-env CROSS_ENV=dev rsbuild dev --open",
+    "build:test": "cross-env CROSS_ENV=test rsbuild build",
+    "build:pre": "cross-env CROSS_ENV=pre rsbuild build",
+    "build:prod": "cross-env CROSS_ENV=production rsbuild build",
+    "preview": "rsbuild preview"
+  },
+  "dependencies": {
+    "antd": "^5.23.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^6.28.2"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^1.1.8",
+    "@rsbuild/plugin-react": "^1.0.7",
+    "@rsbuild/plugin-sass": "^1.2.0",
+    "@rspack/core": "^1.2.2",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^5.6.3",
+    "typescript": "^5.7.2"
+  }
+}
