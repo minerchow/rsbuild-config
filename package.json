@@ -7,7 +7,8 @@
     "build:test": "cross-env CROSS_ENV=test rsbuild build",
     "build:pre": "cross-env CROSS_ENV=pre rsbuild build",
     "build:prod": "cross-env CROSS_ENV=production rsbuild build",
-    "preview": "rsbuild preview"
+    "preview": "rsbuild preview",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "antd": "^5.23.3",
@@ -17,12 +18,20 @@
   },
   "devDependencies": {
     "@rsbuild/core": "^1.1.8",
+    "@rsbuild/plugin-eslint": "^1.1.1",
     "@rsbuild/plugin-react": "^1.0.7",
     "@rsbuild/plugin-sass": "^1.2.0",
     "@rspack/core": "^1.2.2",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.32.0",
+    "@typescript-eslint/parser": "^8.32.0",
     "cross-env": "^7.0.3",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^5.2.0",
     "html-webpack-plugin": "^5.6.3",
     "typescript": "^5.7.2"
   }

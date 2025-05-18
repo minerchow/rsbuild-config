@@ -10,8 +10,9 @@ import './App.scss';
 
 const App = () => {
   useEffect(() => {
-    //@ts-ignore
+    //@ts-expect-error CROSS_ENV由cross-env注入环境变量
     console.log('App mounted',CROSS_ENV);
+   
     return () => {
       console.log('App unmounted');
     };

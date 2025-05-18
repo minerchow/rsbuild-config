@@ -1,10 +1,12 @@
 import { defineConfig } from '@rsbuild/core';
-import { pluginReact } from '@rsbuild/plugin-react';
 import { rspack } from '@rspack/core';
 import { pluginSass } from '@rsbuild/plugin-sass';
+import { pluginEslint } from "@rsbuild/plugin-eslint";
+import { pluginReact } from '@rsbuild/plugin-react';
+// eslint-disable-next-line no-undef
 console.log(process.env.CROSS_ENV)
 export default defineConfig({
-  plugins: [pluginReact(), pluginSass()],
+  plugins: [pluginReact(), pluginSass(),pluginEslint()],
   entry: 'index.js',
   output: {
     // externals: {
